@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "228121424323",
+    "firebase_url": "https://catchup-64fd2.firebaseio.com",
+    "project_id": "catchup-64fd2",
+    "storage_bucket": "catchup-64fd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228121424323:android:3c719315ca436e42",
+        "android_client_info": {
+          "package_name": "com.appteam.catchup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228121424323-qh9q6v2t72ce80seggas3f9qt34askpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appteam.catchup",
+            "certificate_hash": "409b62ccdae04c851d06a0b3b2fdfcad8d058a5f"
+          }
+        },
+        {
+          "client_id": "228121424323-kugja4hs8f1qhq8npilmvpj7ov8hrcn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTsrExueLe02y9Cl0Fn6bJW9VQUM2MgPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228121424323-kugja4hs8f1qhq8npilmvpj7ov8hrcn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

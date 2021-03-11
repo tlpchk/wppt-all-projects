@@ -1,0 +1,22 @@
+
+var a:array[1...200] of integer
+	n,i,min,index : integer
+	
+begin
+	min:=-1;
+	
+	writeln('Введіть кількість елементів n:');
+	read(n);
+	writeln('Введіть елементи масиву a:');
+	
+	for i:=1 to n do
+		read(a[i]);
+		if a[i]<min and a[i]>0 then begin
+			min:=a[i];
+			index:=i;
+		end;
+	
+	
+	if min<0 then writeln('Немає додатніх елементів');
+	else write('Мінімальний додатній елемент = ',min,' на позиції ',index);
+end;

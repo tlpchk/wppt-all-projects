@@ -1,0 +1,21 @@
+$minWidth: 800px;
+$backgroundOfPage: #053354;
+$backgroundOfContent: #e8f1f2;
+$backgroundOfText1:lightblue;
+$backgroundOfText2:#79000e;
+$backgroundOfText3:#b82e2e;
+$headerColor1: #0a5992;
+$headerColor2: #030027;
+$headerColor3: #430009;
+$textColor1: white;
+$textColor2: black;
+$nocolor:rgba(0,0,0,0);
+
+$font1: "Courier New";
+@import '_reset.scss',
+		'_page.scss',
+		'_menu.scss',
+		'_grid.scss',
+		'_opinions.scss',
+		'_card.scss',
+		'_accordion.scss';

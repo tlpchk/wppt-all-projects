@@ -1,0 +1,212 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -g
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_ANONYMOUS_ALLOCATORS
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=2
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=1+
+
+U worker%b		worker.adb		5ee680b6 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W constants%s		constants.ads		constants.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.concat_7%s	s-conca7.adb		s-conca7.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U worker%s		worker.ads		0dfa0253 EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W computer%s		computer.adb		computer.ali
+W goalserver%s		goalserver.adb		goalserver.ali
+W productserver%s	productserver.adb	productserver.ali
+W serviceserver%s	serviceserver.adb	serviceserver.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nudira.ads		20180525052300 71e55def ada.numerics.discrete_random%s
+D a-reatim.ads		20180525052302 0240fc73 ada.real_time%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-textio.ads		20180525052302 881db35a ada.text_io%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D computer.ads		20190601104857 83738020 computer%s
+D constants.ads		20190603140629 5e2a5b55 constants%s
+D goalserver.ads	20190531165224 dd1547ff goalserver%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-c.ads		20180525052259 5421119b interfaces.c%s
+D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
+D productserver.ads	20190531165224 3fc543dd productserver%s
+D serviceserver.ads	20190603135551 7845a1b4 serviceserver%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20180525052301 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20180525052302 0b705ca5 system.concat_3%s
+D s-conca4.ads		20180525052301 7e642b20 system.concat_4%s
+D s-conca7.ads		20180525052259 fcc75b1f system.concat_7%s
+D s-crtl.ads		20180525052259 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-ficobl.ads		20180525052302 078245e4 system.file_control_block%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-imenne.ads		20180525052300 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20180525052300 02dbe0c2 system.img_int%s
+D s-linux.ads		20180525052302 2fda6ad1 system.linux%s
+D s-multip.ads		20180525052259 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180525052301 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180525052302 2b3f8252 system.task_info%s
+D s-taspri.ads		20180525052302 f40ac08d system.task_primitives%s
+D s-taprop.ads		20180525052302 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180525052302 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180525052302 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180525052302 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180525052302 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180525052302 cca55c94 system.tasking.stages%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
+D worker.ads		20190602154427 65f97a0a worker%s
+D worker.adb		20190602195410 ed2812b3 worker%b
+X 1 ada.ads
+16K9*Ada 20e8 55|4r6 56|2r6 2r23
+X 5 a-numeri.ads
+16K13*Numerics 32e17 55|4r10
+X 6 a-nudira.ads
+44k22*Discrete_Random 75e33 55|4w19
+50R9*Generator<37|63R9> 56|6r40[13|33] 7r36[13|34]
+52V13*Random{integer} 56|48s43[13|33] 85s34[13|34]
+55U14*Reset<37|100p14> 56|12s22[13|33] 13s20[13|34]
+X 10 a-textio.ads
+49K13*Text_IO 471e16 56|2w10 2r27
+263U14*Put_Line 56|38s13
+X 12 computer.ads
+3K9*Computer 15e13 55|3w6 3r20
+6Y13 GoalToCompute 56|50s36 60s39
+10P9*ComputerAcc(5T14)
+11A9*ComputerArrayType(10P9)<integer> 55|10r76 56|30r19 80r85
+X 13 constants.ads
+2K9*Constants 46e14 56|1w6 1r21
+4n22*LIVE_MODE{4E9} 56|37r28
+12o4*WORKER_BREAK_TIME{duration} 56|104r19
+25i4*WORKERS_COUNT{integer} 56|15r40
+27i4*COMPUTERS_COUNT{integer} 56|72r50
+29I12*Computer_Range{integer} 56|30r37
+33K12*Rand_Comp_Indx[6|44] 56|6r25 12r7 48r28
+34K12*Rand_Patient[6|44] 56|7r23 13r7 85r21
+36R9*Goal 41e14 56|32r10 42r41
+37i7*arg1{integer} 56|94r16
+38i7*arg2{integer} 56|94r56
+39e7*op{3E9} 56|94r37
+40i7*result{integer} 56|52r21 56r28 63r24 67r31
+44p4*survMode(4E9) 56|37r13
+45p4*exit_state(boolean) 56|107r20
+X 14 goalserver.ads
+3K9*GoalServer 13e15 55|1w6 1r22
+7Y13 getGoal 56|90s18
+11P9*GoalServerAcc(5T14) 55|10r28 56|27r17 80r33
+X 18 productserver.ads
+1K9*ProductServer 11e18 55|2w6 2r25
+4Y13 addProduct 56|96s21
+9P9*ProductServerAcc(3T14) 55|10r48 56|28r20 80r56
+X 19 serviceserver.ads
+4K9*ServiceServer 25e18 55|5w6 5r25
+7Y13 computerToFix 56|54s27 65s30
+10P9*ServiceAcc(6T14) 55|10r105 56|29r17 80r114
+X 41 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 55 worker.ads
+7K9*Worker 19l5 19e11 56|4b14 110l5 110t11
+9T14*WorkerTask 9d25 12l8 12e18 14r64 56|17r27 23b14 109l8 109t18
+9i25 id{positive} 56|38r34
+10Y13 Construct 10>23 10>44 10>66 10>95 56|80b14 87l11 87t20
+10p23 gs{14|11P9} 56|81r21
+10p44 ps{18|9P9} 56|82r24
+10a66 comps{12|11A9} 56|84r23
+10p95 serv{19|10P9} 56|83r21
+11Y13 Statistic 11<23 11<43 56|99b20 102l17 102t26
+11i23 goals{integer} 56|100m16 100r16
+11b43 isPatient{boolean} 56|101m16 101r16
+14A9*WorkerArrayType(9T14)<integer> 15r34 56|15r21
+15P9*WA_Access_Type(14A9) 17r32 56|9r32 10r16
+17V13*initWorkers{15P9} 56|9b13 20l8 20t19
+X 56 worker.adb
+6r4 Rand_Comp_Indx_Gen{6|50R9[13|33]} 12r28 48r50
+7r4 Rand_Patient_Gen{6|50R9[13|34]} 13r26 85r41
+10p7 WA_Ptr{55|15P9} 15m7 16r16 17r10 19r14
+16i11 I{integer} 17r17 17r38
+24b7 patient{boolean} 47r16 85m10 101r29
+25i7 doneGoals{integer} 86m10 95m10 95r23 100r25
+27p7 gServer{14|11P9} 81m10 90r10
+28p7 prodServer{18|9P9} 82m10 96r10
+29p7 service{19|10P9} 54r19 65r22 83m10
+30a7 computers{12|11A9} 50r16 54r41 60r19 65r44 84m10
+32r7 g{13|36R9} 90m26 93m38 93r38 94r14 94r35 94r54
+33i7 solution{integer} 93m10 94r78 96r32
+35U17 Log 35b17 35>21 40l11 40t14 49s16 53s19 62s19 64s22 71s19 91s10 94s10
+35a21 msg{string} 38r52
+42V16 solveOnComputer{integer} 42b16 42=32 77l11 77t26 93s22
+42r32 g{13|36R9} 50m50 52r19 56r26 60m53 63r22 67r29
+43i10 compIndx{positive} 45m10 48m16 49r37 50r26 53r34 54r51 60r29 62r40
+. 64r37 65r54 72m19 72r36
+80p25 gs{14|11P9}
+80p48 ps{18|9P9}
+80a74 comps{12|11A9}
+80p104 serv{19|10P9}
+99i30 goals{integer}
+99b50 isPatient{boolean}
+

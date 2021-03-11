@@ -1,0 +1,108 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -g
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=4
+RV MAX_TASK_ENTRIES=3
+
+U productserver%b	productserver.adb	6ca2dc4a OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W constants%s		constants.ads		constants.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U productserver%s	productserver.ads	3fc543dd EE OO PK
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nudira.ads		20180525052300 71e55def ada.numerics.discrete_random%s
+D a-reatim.ads		20180525052302 0240fc73 ada.real_time%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D constants.ads		20190603140629 5e2a5b55 constants%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-c.ads		20180525052259 5421119b interfaces.c%s
+D productserver.ads	20190531165224 3fc543dd productserver%s
+D productserver.adb	20190531165224 0d4dc4c2 productserver%b
+D system.ads		20180525052301 4635ec04 system%s
+D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-linux.ads		20180525052302 2fda6ad1 system.linux%s
+D s-multip.ads		20180525052259 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180525052301 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180525052302 2b3f8252 system.task_info%s
+D s-taspri.ads		20180525052302 f40ac08d system.task_primitives%s
+D s-taprop.ads		20180525052302 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180525052302 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180525052302 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180525052302 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180525052302 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180525052302 cca55c94 system.tasking.stages%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+X 10 constants.ads
+2K9*Constants 46e14 14|1w6 1r21
+21i4*WAREHOUSE_CAPACITY{integer} 14|6r30 7r35 10r51 18r36 25r36
+45p4*exit_state(boolean) 14|38r20
+X 13 productserver.ads
+1K9*ProductServer 11l5 11e18 14|3b14 43l5 43t18
+3T14*ProductServerTask 7l8 7e25 9r36 14|5b14 40l8 40t25
+4Y13 addProduct 4>24 14|16b23 20l20 20t30
+4i24 p{integer} 14|17r37
+5Y13 getProduct 5<24 14|23b23 27l20 27t30
+5i24 p{integer} 14|24m19 24r19
+6Y13 getLength 6<23 14|30b20 32l17 32t26
+6i23 l{positive} 14|31m16 31r16
+9P9*ProductServerAcc(3T14)
+X 14 productserver.adb
+6a7 products(integer) 17m19 24r24
+7i7 length{natural} 10r42 11r43 19m19 19r29 26m19 26r29 31r21
+8i7 head{natural} 24r33 25m19 25r27
+8i13 tail{natural} 17r28 18m19 18r27
+10V16 isFull{boolean} 15s19
+11V16 isEmpty{boolean} 22s19
+16i35 p{integer}
+23i34 p{integer}
+30i30 l{positive}
+X 28 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

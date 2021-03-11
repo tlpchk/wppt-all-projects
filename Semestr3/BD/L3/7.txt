@@ -1,0 +1,2 @@
+mysqldump -u root -p --no-data lab3> file.sql
+mysql -u root -p lab3 < file.sql

@@ -1,0 +1,20 @@
+{
+  "name": "myextension",
+  "description": "Extension to hack your bank account",
+  "version": "1.0",
+  "manifest_version":2,
+
+  "content_security_policy":"script-src 'self'; object-src 'self'",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "appychip.png"
+  },
+
+  "content_scripts": [{
+    "js": ["hack.js"],
+    "matches": ["http://localhost/*"]
+  }],
+
+  "permissions": ["notifications", "tabs"]
+}

@@ -1,0 +1,54 @@
+html,body{
+	height:100%;
+	background-color: $backgroundOfPage;
+	min-width:500px;
+}
+
+
+#main{
+	padding:5px 5px 50px;
+	width: 83.33%;
+	margin:10px auto;
+	background-color: $backgroundOfContent;
+}
+
+#main-header {
+	color:$textColor1;
+	background-color:$headerColor1;
+	%main-header-style{
+		color:$textColor1;
+		background-color:$headerColor1;
+	}
+	h1{
+		@extend %main-header-style;
+		font-size: 2.5em;padding: 15px 0 0 0
+	}
+	span.subheader{
+		@extend %main-header-style;
+		font-size: 1.5em;
+	}
+	div{
+		@extend %main-header-style;
+	}
+	
+}
+#pwr-logo{
+	float:left;
+}
+#aboutme{	
+	font-family: $font1;
+	text-indent: 50px;
+	line-height: 1.2;
+}
+
+@media screen and (max-width: $minWidth) {
+  #aboutme {
+    width: 100%; }
+
+  #main {
+    margin: 0;
+    width: 100%;}
+}
+
+	
+

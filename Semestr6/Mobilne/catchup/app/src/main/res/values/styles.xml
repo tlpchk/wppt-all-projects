@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="subtleBackground" parent="FirebaseUI">
+        <!-- Required for sign-in flow styling -->
+
+        <!-- Hide top action bar -->
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Set background tiles -->
+        <item name="android:windowBackground">@drawable/login_background</item>
+    </style>
+
+    <!-- Logo styles -->
+    <style name="FirebaseUI.AuthMethodPicker.Logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">100dp</item>
+    </style>
+
+    <!-- Event creation styles -->
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="MyCheckboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

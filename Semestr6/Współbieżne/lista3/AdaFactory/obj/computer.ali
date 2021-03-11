@@ -1,0 +1,145 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -g
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_LOCAL_ALLOCATORS
+RV NO_RELATIVE_DELAY
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=2
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=1+
+
+U computer%b		computer.adb		02f806d1 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W constants%s		constants.ads		constants.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U computer%s		computer.ads		dd59db75 EE OO PK
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W constants%s		constants.ads		constants.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-calend.ads		20180525052301 372815c8 ada.calendar%s
+D a-caldel.ads		20180525052259 9f20b83d ada.calendar.delays%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nudira.ads		20180525052300 71e55def ada.numerics.discrete_random%s
+D a-nuflra.ads		20180525052300 4056ab7a ada.numerics.float_random%s
+D a-reatim.ads		20180525052302 0240fc73 ada.real_time%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D computer.ads		20190601104857 83738020 computer%s
+D computer.adb		20190601124349 9ff776de computer%b
+D constants.ads		20190603140629 5e2a5b55 constants%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-c.ads		20180525052259 5421119b interfaces.c%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-linux.ads		20180525052302 2fda6ad1 system.linux%s
+D s-multip.ads		20180525052259 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180525052301 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180525052302 2b3f8252 system.task_info%s
+D s-taspri.ads		20180525052302 f40ac08d system.task_primitives%s
+D s-taprop.ads		20180525052302 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180525052302 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180525052302 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180525052302 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180525052302 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180525052302 cca55c94 system.tasking.stages%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+X 1 ada.ads
+16K9*Ada 20e8 14|2r6 2r37
+X 6 a-numeri.ads
+16K13*Numerics 32e17 14|2r10 2r41
+X 8 a-nuflra.ads
+41K22*Float_Random 74e30 14|2w19 2r50
+47R9*Generator<27|63R9> 14|7r8
+49F12*Uniformly_Distributed{float} 14|31r19
+51V13*Random{49F12}<27|71p13> 14|33s23
+53U14*Reset<27|100p14> 14|42s10
+X 13 computer.ads
+3K9*Computer 15l5 15e13 14|4b14 63l8 63t16
+5T14*ComputerTask 5d27 8l8 8e20 10r31 14|14r24 39b17 61l11 61t23
+5i27 id{integer}
+6Y13 GoalToCompute 6=27 14|45b23 54l20 54t33
+6r27 g{15|36R9} 14|47r43 50m22 50r22 52m22 52r22
+7Y13 BackDoor 14|56b23 58l20 58t28
+10P9*ComputerAcc(5T14) 11r58
+11A9*ComputerArrayType(10P9)<integer> 12r31 14|12r18
+12P9*CompArr_Acc(11A9) 14r34 14|9r34 10r13
+14V13*initComputers{12P9} 14|9b13 17l8 17t21
+X 14 computer.adb
+5b4 broken{boolean} 35m13 41m10 49r22 57m19
+6i4 solution{integer} 47m19 52r34
+7r4 G{8|47R9} 33r30 42r17
+10p7 Ptr{13|12P9} 12m7 13r16 14r10 16r14
+13i11 I{integer} 14r14 14r37
+19V13 computeGoal{integer} 19b13 19>25 28l8 28t19 47s31
+19r25 g{15|36R9} 21r10 22r17 22r26 23r14 24r17 24r26
+30U14 enduranceTest 30b14 37l11 37t24 48s19
+31f7 RandValue{8|49F12} 33m10 34r13
+45r37 g{15|36R9}
+X 15 constants.ads
+2K9*Constants 13|1w6 1r21 14|1w6 1r21 15|46e14
+3n22*ADD{3E9} 14|21r17
+3n26*MUL{3E9} 14|23r21
+16o4*COMPUTER_COMPUTATION_TIME{duration} 14|46r25
+18f4*PROBABILITY_OF_BREAKING{float} 14|34r25
+29I12*Computer_Range{integer} 14|12r36
+36R9*Goal 13|6r38 14|19r28 45r46 15|41e14
+37i7*arg1{integer} 14|22r19 24r19
+38i7*arg2{integer} 14|22r28 24r28
+39e7*op{3E9} 14|21r12 23r16
+40i7*result{integer} 14|50m24 52m24
+X 31 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

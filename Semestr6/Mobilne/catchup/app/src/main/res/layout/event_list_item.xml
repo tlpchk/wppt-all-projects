@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@android:drawable/ic_menu_today"
+                android:id="@+id/imageView6" android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="229dp"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+                android:id="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:scaleType="fitXY"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/startDate" android:text="dataStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="4dp" app:layout_constraintTop_toTopOf="@+id/guideline2"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintVertical_bias="0.0" android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/guideline4" android:layout_marginStart="4dp"/>
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                tools:text="@tools:sample/lorem[3]" android:textSize="18sp" android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="parent" android:textAlignment="textStart"
+                android:textAllCaps="false" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/guideline" android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"/>
+        <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                tools:text="@tools:sample/lorem[10]"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                android:textAlignment="textStart"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline" android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline5" app:layout_constraintGuide_percent="0.2506329"/>
+        <TextView
+                android:text="capacity"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/capacity"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp" android:layout_marginEnd="4dp"
+                app:layout_constraintStart_toStartOf="@+id/guideline6" android:layout_marginStart="8dp"/>
+        <android.support.constraint.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintGuide_begin="32dp"
+                android:id="@+id/guideline"/>
+        <android.support.constraint.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintGuide_begin="87dp"
+                android:id="@+id/guideline2"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline3" app:layout_constraintGuide_percent="0.80"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                android:id="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/guideline2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"/>
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/iconpeople" android:id="@+id/imageView3"
+                android:layout_weight="1"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/guideline2"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                tools:srcCompat="@drawable/iconpeople" android:layout_marginTop="6dp" android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="6dp"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4" app:layout_constraintGuide_percent="0.35"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline6" app:layout_constraintGuide_percent="0.90"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

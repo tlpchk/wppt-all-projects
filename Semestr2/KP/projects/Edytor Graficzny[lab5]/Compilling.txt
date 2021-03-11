@@ -1,0 +1,8 @@
+Niech w C:\Users\user1\EdytorGraficzny znajduje sie wszystkie elementy programu. 
+
+W terminale nalezy skompilowac ten program nastepnie
+1. cd C:\Users\user1\EdytorGraficzny
+2.javac Applet.java Prostokat.java Figura.java MyPopupMenu.java Okrag.java Panel.java Prostokat.java Wielokat.java MyMenuBar.java PanelButtons.java
+3.appletviewer -J-Djava.security.policy=polfile Applet.java
+
+Plik z zapisanymi figurami znajduje sie tutaj : C:\Users\user1\text.txt

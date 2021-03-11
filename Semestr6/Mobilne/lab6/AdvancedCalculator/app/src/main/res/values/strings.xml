@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AdvancedCalculator</string>
+
+    <string-array name="operations_array">
+        <item>simplify</item>
+        <item>factor</item>
+        <item>derive</item>
+        <item>integrate</item>
+        <item>zeroes</item>
+        <item>tangent</item>
+        <item>area</item>
+        <item>cos</item>
+        <item>sin</item>
+        <item>tan</item>
+        <item>arccos</item>
+        <item>arcsin</item>
+        <item>arctan</item>
+        <item>abs</item>
+        <item>log</item>
+    </string-array>
+</resources>

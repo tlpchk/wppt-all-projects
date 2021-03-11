@@ -1,0 +1,63 @@
+1. /dev	znajdujące się tutaj pliki nie są faktycznie plikami na dysku,
+	lecz odnoszą się do urządzeń - za ich pośrednictwem system komunikuje
+	się z urządzeniami (komunikacja niskopoziomowa)
+	
+	/proc	wirtualny katalog, zawierający dane o aktualnie uruchomionych procesach
+	
+	$dd if=/dev/sda of=/home/mbr-part-table bs=1 count=66 skip=446
+	$dd if=/dev/sda of=/home/mbr-boot-code bs=446 count=1
+	$hexdump -C < mbr-part-table
+	$hexdump -C < mbr-boot-code
+	
+	$less /proc/meminfo
+	$less /proc/cpuinfo
+	
+2.  $ps -aux - procesy wraz z informacją o nich
+	$ps -axl -       - || -                    (Nieco inna,dodatkowa)  
+	$ps T - tylko procesy połączeni z terminalem
+	$tty - jaki terminal wykorzystywany
+	$ps -f (PID procesu) - info o procesie o indeksie PID
+	
+3. 	*Wejściowe dane cat przeprowadzay na wyjście pliku test.c komendą cat>test.c (Co wpisujemy, to będzie zapisane w test.c)
+	*Podłączamy standartową bibliotekę wejścia i wyjścia $include <stdio.h>
+	*Tworzymy głowną metodę int main(int argc, char *argv[])
+	*Początek działania metody main {
+	*Wyświetlamy na standartowe wyjście "Hello, World!", przechodzimy do nowego wiersza
+	*Program skończył się dobrze return 0;
+	*Koniec działania metody main }
+	*Koniec wpisu danych w test.c ^D
+	*Kompilacjia pliku gcc -Wall -pedantic test.c 
+	*Po kompilacji na wyjściu otrymujemy plik a z rozszerzeniem *.out który urachimiamy poleceniem ./a.out
+	-Wall -Wyświetlanie wszystkich warningów
+    -pedantic -Odrzucić wszystkie programy korzystające z zabroninych rozszerzeń, wyświetlić ostrzerzerzenia ANSI
+	
+4.  $cat | tee  plik1 | wc -l 
+	te wszystkie procesy mają wspólnego rodzica bash(sprawdamy krwięstwo w drugim terminalu)
+	
+5.  $mkfifo pipe1
+
+	Terminal №1				         Terminal №2
+	$cat > pipe1                   $cat < pipe1 
+	
+	cat z drugiego terminalu czeka na dane, dopóki nie bedzie wciśnięty ENTER, wtedy wyświetla.
+	cończy działanie, gdy kończy się wpisywanie danych w pierwszym terminulu(^D).
+	cat wpisujący dane nie kończy działanie, dopóki cat z drugiego terminulu nie przyjmie te dane.
+
+6. #include <stdio.h>
+
+	int main(){
+	int i;
+	for(i=30;i<38;i++){
+		char str[2];
+		sprintf(str,"%d",i); 
+		printf("\033[%smHello, World!\033[0m\n",str);
+		printf("\033[2;%smHello, World!\033[0m\n",str);
+	}
+	return 0;
+	}
+	
+	Można zmienić kolor tekstu w terminalu na jeden z 256 dostępnych 8-bitowych kolorów poprzez
+	dopisywanie PS1="..." w plik .bashrc 
+
+7. $for file in *; do if [[ -f $file ]]; then mv "$file" `echo "$file" | tr '[A-Z]' '[a-z]'`; fi done
+

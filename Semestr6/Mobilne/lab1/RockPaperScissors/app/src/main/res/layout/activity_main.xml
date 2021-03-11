@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnSpan="3"
+        android:layout_row="0"
+        android:layout_column="0"
+    />
+
+    <ImageView
+        android:id="@+id/computerImageView"
+        android:layout_columnSpan="3"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill_vertical|center_horizontal"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/computer"
+    />
+    <ImageView
+        android:id="@+id/playerImageView"
+        android:layout_columnSpan="3"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill_vertical|center_horizontal"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/you"
+    />
+
+    <Button
+        android:id="@+id/rockButton"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/rock"
+        android:onClick="onClick"
+    />
+    <Button
+
+        android:id="@+id/paperButton"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/paper"
+        android:onClick="onClick"
+    />
+    <Button
+        android:id="@+id/scissorsButton"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/scissors"
+        android:onClick="onClick"
+    />
+
+</GridLayout>

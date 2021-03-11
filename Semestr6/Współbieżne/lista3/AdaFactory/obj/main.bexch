@@ -1,0 +1,30 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/adafactory.gpr
+20190531165224
+[BOUND OBJECT FILES]
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/constants.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/computer.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/goalserver.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/productserver.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/boss.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/client.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/serviceserver.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/worker.o
+/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/
+-L/home/telepchuk/Documents/6 semestr/Współbieżne/236723/Współbieżne/lista3/AdaFactory/obj/
+-L/opt/GNAT/2018/lib/gcc/x86_64-pc-linux-gnu/7.3.1/adalib/
+-static
+-static-libgcc
+/opt/GNAT/2018/lib/gcc/x86_64-pc-linux-gnu/7.3.1/adalib/libgnarl.a
+/opt/GNAT/2018/lib/gcc/x86_64-pc-linux-gnu/7.3.1/adalib/libgnat.a
+-lpthread
+-lrt
+-ldl

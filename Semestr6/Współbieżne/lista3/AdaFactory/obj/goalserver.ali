@@ -1,0 +1,143 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -g
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=4
+RV MAX_TASK_ENTRIES=3
+
+U goalserver%b		goalserver.adb		cff5daf9 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W constants%s		constants.ads		constants.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U goalserver%s		goalserver.ads		833f1caa EE OO PK
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W constants%s		constants.ads		constants.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nudira.ads		20180525052300 71e55def ada.numerics.discrete_random%s
+D a-reatim.ads		20180525052302 0240fc73 ada.real_time%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-textio.ads		20180525052302 881db35a ada.text_io%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D constants.ads		20190603140629 5e2a5b55 constants%s
+D goalserver.ads	20190531165224 dd1547ff goalserver%s
+D goalserver.adb	20190601124656 c4d77509 goalserver%b
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-c.ads		20180525052259 5421119b interfaces.c%s
+D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20180525052301 02a0d7d0 system.concat_2%s
+D s-conca6.ads		20180525052259 d2c72db2 system.concat_6%s
+D s-crtl.ads		20180525052259 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-ficobl.ads		20180525052302 078245e4 system.file_control_block%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-imenne.ads		20180525052300 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20180525052300 02dbe0c2 system.img_int%s
+D s-linux.ads		20180525052302 2fda6ad1 system.linux%s
+D s-multip.ads		20180525052259 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180525052301 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180525052302 2b3f8252 system.task_info%s
+D s-taspri.ads		20180525052302 f40ac08d system.task_primitives%s
+D s-taprop.ads		20180525052302 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180525052302 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180525052302 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180525052302 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180525052302 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180525052302 cca55c94 system.tasking.stages%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 14|2r6 2r23
+X 10 a-textio.ads
+49K13*Text_IO 471e16 14|2w10 2r27
+263U14*Put_Line 14|8s10
+X 12 constants.ads
+2K9*Constants 46e14 13|1w6 1r21 14|1w6 1r21
+4n22*LIVE_MODE{4E9} 14|7r26
+6b4*LISTA_3{boolean} 14|7r40
+20i4*GOALS_CAPACITY{integer} 14|14r27 15r35 18r51 27r36 34r36
+36R9*Goal 41e14 13|6r28 7r29 14|14r46 24r39 32r39
+37i7*arg1{integer} 14|26r43
+38i7*arg2{integer} 14|26r83
+39e7*op{3E9} 14|26r64
+44p4*survMode(4E9) 14|7r11
+45p4*exit_state(boolean) 14|45r17
+X 13 goalserver.ads
+3K9*GoalServer 13l5 13e15 14|4b14 49l5 49t15
+5T14*GoalServerTask 9l8 9e22 11r33 14|13b14 47l5 47t19
+6Y13 addGoal 6>21 14|24b23 29l20 29t27
+6r21 g{12|36R9} 14|25r34 26r41 26r62 26r81
+7Y13 getGoal 7<21 14|32b23 36l20 36t27
+7r21 g{12|36R9} 14|33m19 33r19
+8Y13 getLength 8<23 14|38b20 40l17 40t26
+8i23 l{positive} 14|39m16 39r16
+11P9*GoalServerAcc(5T14)
+X 14 goalserver.adb
+5U14 Log 5b14 5>18 10l8 10t11 26s19
+5a18 msg{string} 8r31
+14a7 goals(12|36R9) 25m19 33r24
+15i7 length{natural} 18r42 19r43 28m19 28r29 35m19 35r29 39r21
+16i7 head{natural} 33r30 34m19 34r27
+16i13 tail{natural} 25r25 27m19 27r27
+18V16 isFull{boolean} 23s19
+19V16 isEmpty{boolean} 31s19
+24r32 g{12|36R9}
+32r31 g{12|36R9}
+38i30 l{positive}
+X 37 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

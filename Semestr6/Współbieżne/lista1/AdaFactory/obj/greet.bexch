@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__greet.o
+[PROJECT FILES]
+/home/telepchuk/Documents/6 semestr/Współbieżne/lista1/AdaFactory/adafactory.gpr
+20190326094114
+[BOUND OBJECT FILES]
+/home/telepchuk/Documents/6 semestr/Współbieżne/lista1/AdaFactory/obj/greet.o
+[GENERATED SOURCE FILES]
+b__greet.ads
+b__greet.adb
+b__greet.ali
+[RESULTING OPTIONS]
+-L/home/telepchuk/Documents/6 semestr/Współbieżne/lista1/AdaFactory/obj/
+-L/home/telepchuk/Documents/6 semestr/Współbieżne/lista1/AdaFactory/obj/
+-L/opt/GNAT/2018/lib/gcc/x86_64-pc-linux-gnu/7.3.1/adalib/
+-static
+-static-libgcc
+/opt/GNAT/2018/lib/gcc/x86_64-pc-linux-gnu/7.3.1/adalib/libgnat.a
+-ldl

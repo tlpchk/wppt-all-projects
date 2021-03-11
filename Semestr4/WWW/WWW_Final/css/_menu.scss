@@ -1,0 +1,39 @@
+$bg-color : $headerColor1;
+$bg-hover : $headerColor2;
+#navbar {
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+    background-color: $bg-color;
+	ul{
+		li { 
+			text-align:center;
+			float: left;
+			width:  20;
+			a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+
+				&:hover {
+				background-color: $bg-hover;
+				}
+			}
+			&.home{
+				background-color: $backgroundOfText2;
+			}
+			&.opinion{
+				float:right;
+			}
+		}
+	}
+}
+@media screen and (max-width: $minWidth) {
+	#navbar{
+		li{
+			width:25%;
+		}
+	}
+}

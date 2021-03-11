@@ -1,0 +1,83 @@
+1540918495935	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.b1Pk6ZNyArVV"
+JavaScript error: jar:file:///usr/lib/firefox-esr/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1540918501086	Marionette	INFO	Listening on port 41545
+1540918501157	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1540919113466	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2FUO25AqqSja"
+JavaScript error: jar:file:///usr/lib/firefox-esr/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1540919117732	Marionette	INFO	Listening on port 35183
+1540919117796	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540919169032	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3mTfEeU2tqO9"
+JavaScript error: jar:file:///usr/lib/firefox-esr/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1540919177179	Marionette	INFO	Listening on port 41139
+1540919177362	Marionette	WARN	TLS certificate errors will be ignored for this session
+ExceptionHandler::GenerateDump cloned child 4136
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+[Parent 3850, Gecko_IOThread] WARNING: pipe error (55): Connection reset by peer: file /build/firefox-esr-XulgD0/firefox-esr-60.2.0esr/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+1540919652888	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ectbYsKXQVrx"
+JavaScript error: jar:file:///usr/lib/firefox-esr/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1540919657160	Marionette	INFO	Listening on port 34449
+1540919657212	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1540919688450	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.x5N6V63Z1Nxf"
+JavaScript error: jar:file:///usr/lib/firefox-esr/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1540919692491	Marionette	INFO	Listening on port 35753
+1540919692568	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1540919779475	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UTQ9erEmRgkt"
+JavaScript error: jar:file:///usr/lib/firefox-esr/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1540919783484	Marionette	INFO	Listening on port 38989
+1540919783495	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-114728111-2, line 76: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

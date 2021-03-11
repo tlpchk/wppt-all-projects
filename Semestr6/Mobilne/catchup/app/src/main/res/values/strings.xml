@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Catchup</string>
+
+    <!--ACTIVITY TITLES-->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">Logowanie</string>
+
+    <!--LoginActivity-->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Hasło</string>
+    <string name="action_sign_in">Zaloguj</string>
+    <string name="action_sign_in_short">Zaloguj</string>
+    <string name="welcome">"Witaj !"</string>
+    <string name="invalid_username">Niepoprawna nazwa użytkownika</string>
+    <string name="invalid_password">Hasło musi posiadać conajmniej 5 znaków</string>
+    <string name="login_failed">"Logowanie nieudane"</string>
+
+    <!--MENU DRAWER-->
+    <string name="navigation_drawer_open">Otwórz menu</string>
+    <string name="navigation_drawer_close">Zamknij menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--MENU DRAWER ITEMS-->
+    <string name="menu_header_actions">Akcje</string>
+    <string name="menu_header_navigation">Nawigacja</string>
+    <string name="menu_home">Mapa</string>
+    <string name="menu_event_list">Lista wydarzeń</string>
+    <string name="menu_logout">Wyloguj</string>
+
+    <!--CREATE EVENT-->
+    <string name="event_desciption_hint">Event description</string>
+    <string name="event_end_date_hint">End date</string>
+    <string name="event_start_date_hint">Start date</string>
+    <string name="event_name_hint">Event name</string>
+    <string name="event_type_hint">Event type</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_event_button">Create</string>
+    <string name="limit_number_of_places_checkbox">Limit number of places</string>
+    <string name="event_photo">Event photo</string>
+    <string name="event_capacity">Event capacity</string>
+    <string name="tab_text">Wszystkie</string>
+    <string name="tab_text2">Biorę udział</string>
+    <string name="tab_text3">Moje</string>
+
+    <string name="facebook_application_id" translatable="false">2511028638949287</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb2511028638949287</string>
+    <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
+    <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+
+    <string name="channel_name">CatchupEvents</string>
+    <string name="channel_description">Notifies when event is about to begin</string>
+
+    <string name="title_location_permission">Location permission</string>
+    <string name="join">Join</string>
+    <string name="refuse">Refuse</string>
+    <string name="see_on_map"><u>See on map</u></string>
+    <string name="delete">Delete</string>
+    <string name="text_location_permission">To see your position on the map please allow</string>
+</resources>

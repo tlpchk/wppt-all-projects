@@ -1,0 +1,3 @@
+#!/bin/bash
+javac -d ../bin ../*.java 2> /dev/null
+java -classpath ../bin zad3 $1 $2 $3 $4 <&0 >&1

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rockButton" type="id"/>
+    <item name="paperButton" type="id"/>
+    <item name="scissorsButton" type="id"/>
+    <item name="playerImageView" type="id"/>
+    <item name="scoreView" type="id"/>
+    <item name="computerImageView" type="id"/>
+</resources>

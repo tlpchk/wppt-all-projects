@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:context=".ui.createEvent.CreateEventFragment"
+        android:padding="8dp"
+>
+
+
+    <EditText
+            android:id="@+id/event_name"
+            android:theme="@style/MyEditTextStyle"
+            android:hint="@string/event_name_hint"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:importantForAutofill="no" tools:targetApi="o"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/event_image"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/constraintLayout"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:layout_marginStart="8dp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  android:layout_marginEnd="8dp"
+                  android:orientation="horizontal" android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toBottomOf="@+id/event_name">
+
+        <EditText
+                android:id="@+id/event_start_date"
+                android:theme="@style/MyEditTextStyle"
+                android:hint="@string/event_start_date_hint"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="datetime" app:layout_constraintEnd_toStartOf="@+id/event_end_date"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.498" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:importantForAutofill="no" tools:targetApi="o"/>
+
+        <EditText
+                android:id="@+id/event_end_date"
+                android:theme="@style/MyEditTextStyle"
+                android:hint="@string/event_end_date_hint"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="datetime"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:importantForAutofill="no" tools:targetApi="o"/>
+
+    </LinearLayout>
+
+
+    <EditText
+            android:id="@+id/event_description"
+            android:theme="@style/MyEditTextStyle"
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:lines="4"
+            android:hint="@string/event_desciption_hint"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            android:importantForAutofill="no"
+            tools:targetApi="o"/>
+    <Button
+            android:text="@string/create_event_button"
+            android:theme="@style/MyButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectPlaceButton" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+    />
+    <ImageView
+            android:src="@drawable/add_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:id="@+id/event_image" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:contentDescription="@string/event_photo"/>
+
+    <CheckBox android:id="@+id/checkbox_meat"
+              android:theme="@style/MyCheckboxStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/limit_number_of_places_checkbox"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/event_description" app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <EditText
+            android:id="@+id/event_capacity"
+            android:theme="@style/MyEditTextStyle"
+            android:hint="@string/event_capacity"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:importantForAutofill="no" tools:targetApi="o"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_meat" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+
+</android.support.constraint.ConstraintLayout>

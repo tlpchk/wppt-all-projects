@@ -1,0 +1,98 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -g
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_ANONYMOUS_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U constants%s		constants.ads		2fcf06ba EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nudira.ads		20180525052300 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20180525052300 72908cdb ada.numerics.discrete_random%b
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D constants.ads		20190603140629 5e2a5b55 constants%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-imguns.ads		20180525052300 9ff43cf7 system.img_uns%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20180525052302 20ba1217 system.random_numbers%b
+D s-ransee.ads		20180525052302 01a57b33 system.random_seed%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+D s-valuns.ads		20180525052302 10a8ed3b system.val_uns%s
+X 1 ada.ads
+16K9*Ada 20e8 6|1r6 31r28 32r27 33r34 34r32
+X 2 a-numeri.ads
+16K13*Numerics 32e17 6|1r10 31r32 32r31 33r38 34r36
+X 3 a-nudira.ads
+44k22*Discrete_Random 75e33 6|1w19 31r41 32r40 33r47 34r45
+X 4 a-nudira.adb
+53V16 Random[12|83]{integer} 13|392b13[6|33]
+X 6 constants.ads
+2K9*Constants 46l5 46e14
+3E9*Operator 3e30 32r56 39r12
+3n22*ADD{3E9}
+3n26*MUL{3E9}
+4E9*ModeType 4e49 44r22 44r38
+4n22*LIVE_MODE{4E9} 44r48
+4n32*INTERACTIVE_MODE{4E9}
+6b4*LISTA_3{boolean}
+8i4*MAX_ARG_VALUE{integer} 30r54
+9i4*MIN_ARG_VALUE{integer} 30r39
+11o4*BOSS_BREAK_TIME{duration}
+12o4*WORKER_BREAK_TIME{duration}
+13o4*IMPATIENT_WORKER_WAITING_TIME{duration}
+14o4*CLIENT_BREAK_TIME{duration}
+16o4*COMPUTER_COMPUTATION_TIME{duration}
+17o4*COMPUTER_FIXING_TIME{duration}
+18f4*PROBABILITY_OF_BREAKING{float}
+20i4*GOALS_CAPACITY{integer}
+21i4*WAREHOUSE_CAPACITY{integer}
+24i4*SERVICE_WORKERS_COUNT{integer}
+25i4*WORKERS_COUNT{integer}
+26i4*CLIENTS_COUNT{integer}
+27i4*COMPUTERS_COUNT{integer} 29r47
+29I12*Computer_Range{integer} 33r63
+30I12*Arg_Range{integer} 31r57
+31K12*Rand_Int[3|44]
+32K12*Rand_Op[3|44]
+33K12*Rand_Comp_Indx[3|44]
+34K12*Rand_Patient[3|44]
+36R9*Goal 41e14
+37i7*arg1{integer}
+38i7*arg2{integer}
+39e7*op{3E9}
+40i7*result{integer}
+44p4*survMode(4E9)
+45p4*exit_state(boolean)
+X 7 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 12 s-rannum.ads
+75V13*Random{7|74M9} 13|221i21
+76V13*Random{7|77M9} 13|221i21
+

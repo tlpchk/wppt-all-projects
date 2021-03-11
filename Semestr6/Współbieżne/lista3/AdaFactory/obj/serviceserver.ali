@@ -1,0 +1,167 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -g
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_RELATIVE_DELAY
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=2
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1+
+
+U serviceserver%b	serviceserver.adb	6404688a OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U serviceserver%s	serviceserver.ads	a51c7ac1 EE OO PK
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W computer%s		computer.adb		computer.ali
+W constants%s		constants.ads		constants.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-calend.ads		20180525052301 372815c8 ada.calendar%s
+D a-caldel.ads		20180525052259 9f20b83d ada.calendar.delays%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nudira.ads		20180525052300 71e55def ada.numerics.discrete_random%s
+D a-reatim.ads		20180525052302 0240fc73 ada.real_time%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-textio.ads		20180525052302 881db35a ada.text_io%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D computer.ads		20190601104857 83738020 computer%s
+D constants.ads		20190603140629 5e2a5b55 constants%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-c.ads		20180525052259 5421119b interfaces.c%s
+D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
+D serviceserver.ads	20190603135551 7845a1b4 serviceserver%s
+D serviceserver.adb	20190603140313 945c7a64 serviceserver%b
+D system.ads		20180525052301 4635ec04 system%s
+D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20180525052301 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20180525052302 0b705ca5 system.concat_3%s
+D s-conca4.ads		20180525052301 7e642b20 system.concat_4%s
+D s-crtl.ads		20180525052259 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-ficobl.ads		20180525052302 078245e4 system.file_control_block%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-imgint.ads		20180525052300 02dbe0c2 system.img_int%s
+D s-linux.ads		20180525052302 2fda6ad1 system.linux%s
+D s-multip.ads		20180525052259 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180525052301 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180525052302 2b3f8252 system.task_info%s
+D s-taspri.ads		20180525052302 f40ac08d system.task_primitives%s
+D s-taprop.ads		20180525052302 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180525052302 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180525052302 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180525052302 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180525052302 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180525052302 cca55c94 system.tasking.stages%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 20|1r6 1r23
+X 12 a-textio.ads
+49K13*Text_IO 471e16 20|1w10 1r27
+263U14*Put_Line 20|11s13 45s13
+X 14 computer.ads
+3K9*Computer 15e13 19|2w6 2r20
+5i27 id{integer} 20|90r38 92r43 99r49
+7Y13 BackDoor 20|21s26
+10P9*ComputerAcc(5T14) 19|7r42 16r35 20|18r42 89r43
+X 15 constants.ads
+2K9*Constants 46e14 19|1w6 1r21
+4n22*LIVE_MODE{4E9} 20|10r29 44r29
+17o4*COMPUTER_FIXING_TIME{duration} 20|20r22
+24i4*SERVICE_WORKERS_COUNT{integer} 19|11r35 21r35 20|102r41
+44p4*survMode(4E9) 20|10r14 44r14
+45p4*exit_state(boolean) 20|30r20
+X 19 serviceserver.ads
+4K9*ServiceServer 25l5 25e18 20|3b14 115l5 115t18
+6T14*ServiceTask 8l8 8e19 10r34 20|36b14 113l8 113t19
+7Y13 computerToFix 7>27 20|89b17 109l14 109t27
+7p27 compToFix{14|10P9} 20|90r28 92r33 96r63 99r39
+10P9*ServiceAcc(6T14)
+11A9*ScheduleType(integer)<integer> 20|39r18
+15T14*ServiceWorkerTask 15d32 18l8 18e25 20r36 20|6b14 32l8 32t25 79r35
+15i32 id{positive} 20|11r41 19r48 22r35
+16Y13 Request 16>21 20|18b20 23l17 23t24 96s42
+16p21 compToFix{14|10P9} 20|21r16 96r50
+17Y13 Free 20|25b20 27l17 27t21 63s41
+20P9*ServiceWorkerAcc(15T14) 21r61
+21A9*SW_ArrayType(20P9)<integer> 22r30 20|75r29
+22P9*SW_Arr_Acc(21A9) 20|38r24
+X 20 serviceserver.adb
+8U17 Log 8b17 8>21 13l11 13t14 19s16 22s16
+8a21 msg{string} 11r59
+18p28 compToFix{14|10P9}
+38p7 serviceWorkers{19|22P9} 61r26 63r16 75m7 78r16 79r10 96r22
+39a7 schedule{19|11A9} 51r19 52r17 64r19 65m19 83r16 84m10 99m22
+40i7 idx{integer} 87m7 96r37 98r47 99r31 102m22 102r33
+42U17 Log 42b17 42>21 47l11 47t14 66s19 90s13 98s22 106s16
+42a21 msg{string} 45r36
+49V16 computerIsFixed{boolean} 49b16 49>32 57l11 57t26 92s17
+49i32 compId{integer} 52r31
+51i14 I{integer} 52r26
+59U17 refreshSchedule 59b17 72l11 72t26 91s13
+61i14 workerId{integer} 63r31 64r28 65r28 66r54
+78i11 I{integer} 79r25 79r53
+83i11 I{integer} 84r19
+89p31 compToFix{14|10P9}
+93l16 Lookup_Loop 100r27 104l25 104e36
+X 40 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding:10px;
+	box-sizing: border-box;
+	text-decoration:none;
+	/*border:1px solid black; /**/
+}
+
+html,body{
+	padding:0;
+	height:100%;
+	background-color: #0B2027;
+}
+
+html{
+	min-width:500px;
+}
+
+#main{
+	padding:5px 5px 50px;
+	width: 83.33%;
+	margin: 10px auto;
+	background-color: #F2F3D9;
+}
+
+header *{
+	padding:0;
+}
+
+header *, header{
+	color:white;
+	background-color:#3321ba;
+}
+
+#mylogo{
+	padding: 15px 10px;
+}
+
+#pwr-logo{
+	float:left;
+}
+
+#aboutme{
+	border-right: 2px lightgray solid;
+	font-family: "Courier New";
+	text-indent: 50px;
+}
+
+
+
+
+	

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.eventList.EventListFragment"
+>
+
+    <android.support.design.widget.TabLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:visibility="visible" android:id="@+id/tabs">
+
+        <android.support.design.widget.TabItem
+                android:text="@string/tab_text" android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:id="@+id/allEventTab"/>
+
+        <android.support.design.widget.TabItem
+                android:text="@string/tab_text2" android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:id="@+id/participateEventTab"/>
+
+        <android.support.design.widget.TabItem
+                android:text="@string/tab_text3" android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:id="@+id/myEventsTab"/>
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v7.widget.RecyclerView
+            tools:listitem="@layout/event_list_item"
+            android:layout_width="match_parent"
+            android:elevation="2dp"
+            android:layout_height="match_parent" android:id="@+id/recycler_view"/>
+
+
+</LinearLayout>
+

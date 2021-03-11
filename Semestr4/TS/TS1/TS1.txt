@@ -1,0 +1,226 @@
+PING
+
+Polecenie ping jest poleceniem używanym do testowania zdolności komputera źródłowego do dotarcia do określonego komputera docelowego. Zwykle używane jako prosty sposób sprawdzenia, czy komputer może komunikować się przez sieć z innym komputerem lub urządzeniem sieciowym.
+
+-------------------------------------------
+Jak działa polecenie ping
+
+Komenda ping działa, wysyłając komunikaty żądania echa protokołu ICMP (Internet Control Message Protocol) do komputera docelowego i czekając na odpowiedź.
+
+Czas potrzebny na odpowiedź sieci zwany jest opóźnieniem.
+
+Ile z tych odpowiedzi jest zwracanych i ile czasu potrzeba na ich zwrot, to dwie główne informacje dostarczane przez polecenie ping.
+
+-----------------------------------------
+Dlaczego warto skorzystać z polecenia "ping"
+
+Na przykład można pingować router, aby sprawdzić, czy komputer może się z nim połączyć, aby wyeliminować go jako możliwą przyczynę problemu z siecią.
+------------------------------------------
+
+Przykład użycia polecenia "ping"
+Aby sprawdzić, czy strona jest dostępna, wpisz "ping", a następnie nazwę strony, z którą chcesz się połączyć. 
+
+	ping cs.pwr.edu.pl
+
+Polecenie ping nieprzerwanie wysyła żądania do sieci, a gdy odpowiedź zostanie odebrana, otrzymujemy informację wyjściową z następującymi informacjami:
+
+	*liczba odebranych bajtów
+	*adres IP
+	*numer porządkowy
+	*czas potrzebny na odpowiedź
+	*TTL(time to live)
+
+
+Możemy sprwdzać połączenie mając IP-address
+	ping 151.101.65.121
+---------------------------------------------
+
+Flagi
+
+Uwiadominie "ping"
+Można uzyskać polecenie ping, aby wygenerować powiadomienie po odebraniu odpowiedzi
+
+	ping -a cs.pwr.edu.pl
+
+Zwróenie adres IPv4 lub IPv6
+
+	ping -4 cs.pwr.edu.pl
+
+Aby użyć formatu tylko IPv6
+
+	ping -6 cs.pwr.edu.pl
+
+Limit Ilość pingów
+Można ograniczyć liczbę prób, używając flagę -c
+
+	ping -c 4 cs.pwr.edu.pl
+
+Można ustalić, jak długo ma działać polecenie ping, używając -w.
+
+	ping -w 10 cs.pwr.edu.pl
+
+Określa termin wysłania polecenia ping na 10 sekund.
+Co ciekawe, uruchamianie poleceń w ten sposób jest wynikiem, ponieważ pokazuje liczbę wysłanych pakietów i liczbę odebranych.
+
+wizualizacja otrzymanych pakietów
+	sudo ping -f cs.pwr.edu.pl
+
+Określenie dłuższego odstępu czasu pomiędzy kolejnymi żądaniami(w sekundach)
+
+	ping -i 4 cs.pwr.edu.pl
+
+Ograniczenie wyjścia
+	ping -q cs.pwr.edu.pl
+
+//////////////////////////////////////////////////
+
+TRACEROUTE
+
+Jak działa Traceroute
+
+Internet to duża i złożona agregacja sprzętu sieciowego, połączona ze sobą bramkami.
+Za każdym razem, gdy komputer łączy się ze stroną internetową, musi przejść ścieżkę, która składa się z kilku punktów. Sygnał zaczyna się od lokalnego routera w domu lub firmie, a następnie przenosi się do usługodawcy internetowego, a następnie do głównych sieci. Stamtąd może mieć kilka skrzyżowań, dopóki nie dojdzie do samego serwera.
+
+Traceroute wyświetla ścieżkę, którą odebrał sygnał podczas podróży do serwera. Wyświetla także czasy reakcji, które wystąpiły w każdym węzłu na trasie. Jeśli wystąpi problem z połączeniem, pojawi się ona natychmiast.Można odśledzić który z routerów jest winny w spadu prędkości.
+
+
+Domyślna długość pakietu wynosi 40 bajtów, ale można ją zwiększyć, podając długość pakietu (w bajtach) po nazwie hosta docelowego.
+
+--------------------------------------------------
+Jak czytać Traceroute
+Po uruchomieniu traceroute generuje raport, gdy przechodzi on po trasie.
+Każdy rząd reprezentuje "przeskok" wzdłuż trasy. Każdy wiersz jest podzielony na pięć kolumn. 
+
+Hop | Nazwa / adres IP | RTT 1 | RTT 2 | RTT 3
+
+Numer skoku - jest to pierwsza kolumna i jest po prostu liczbą przeskoków na trasie.
+
+Kolumna Domain / IP - kolumna ma adres IP routera. Jeśli jest dostępna, nazwa domeny również zostanie wyświetlona.
+
+Kolumny RTT - Następne trzy kolumny wyświetlają czas podróży w obie strony (RTT) dla twojego pakietu, aby osiągnąć ten punkt i powrócić do twojego komputera. Jest to wymienione w milisekundach. Istnieją trzy kolumny, ponieważ Traceroute wysyła trzy oddzielne pakiety sygnałowe. Ma to na celu wykazanie spójności lub jej braku na trasie.
+
+Jeśli nie ma odpowiedzi w ciągu 5 sekund/ timeout interval (zmienionia się flagą -w), drukowany jest "*" dla tego pakietu.
+
+
+---------------------------------------
+
+Sprawdzanie czasów przeskoków
+
+Czasy wymienione w kolumnach RTT są najważniejszą rzeczą podczas oceniania traceroute. Mogą występować specyficzne przeskoki o zwiększonym czasie oczekiwania, ale mogą nie wskazywać na problem.Trzeba spojrzeć na wzór w całym raporcie. Czasy powyżej 150 ms są uważane za długie na podróż w kontynentalnej części Stanów Zjednoczonych. (Czasy powyżej 150 ms mogą być normalne, jeśli sygnał przecina ocean.), Ale problemy mogą się pojawić z bardzo dużymi liczbami.
+
+Zwiększenie opóźnienia w kierunku celu
+Jeśli zauważysz nagły wzrost przeskoku i będzie on wzrastał do miejsca przeznaczenia, oznacza to że problem zaczynający się od przeskoku wraz ze wzrostem. Może to również spowodować utratę pakietów, które wyróżniają gwiazdki (*) w raporcie.
+ 
+Duże opóźnienie w środku, ale nie na początku ani na końcu
+Jeśli skok natychmiast po długim cofnięciu oznacza po prostu, że router na długim przeskoku ustawia sygnał na niższy priorytet i nie ma problemu. Takie wzorce nie oznaczają problemu.
+
+----------------------------------
+Flagi
+
+-f
+
+Ustaw początkowy czas życia używany w pierwszym wychodzącym pakiecie.
+
+-F
+
+Nie fragmentać pakiety.
+
+-d
+
+Określ luźną bramę trasy źródłowej (maksimum 8).
+
+-m
+
+Ustaw maksymalny czas życia (maksymalna liczba przeskoków) używany w wychodzących pakietach. Wartość domyślna to 30 przeskoków.
+
+-s
+
+Użyj następującego adresu IP (który zwykle jest podawany jako numer IP, a nie nazwa hosta) jako adresu źródłowego w wychodzących pakietach. Na hostach wieloadresowych (tych z więcej niż jednym adresem IP) opcja ta może być używana do wymuszania adresu źródłowego na coś innego niż adres IP interfejsu, do którego jest wysyłany pakiet sond. Jeśli adres IP nie jest adresem interfejsu tego urządzenia, zostanie zwrócony błąd i nic nie zostanie wysłane.
+
+-t
+
+Ustaw rodzaj usługi w pakietach.
+
+Wartość musi być dziesiętną liczbą całkowitą z zakresu od 0 do 255. Ta opcja może być używana do sprawdzenia, czy różne typy usług powodują różne ścieżki.
+
+-w
+
+Ustaw czas (w sekundach) na oczekiwanie na odpowiedź węzłu (domyślnie 5 sekund).
+
+-z
+
+Ustaw czas (w milisekundach) na przerwanie między węzłami (domyślnie 0).
+------------------------------------------------------------------
+
+
+Inne możliwe adnotacje po tym czasie to! H,! N lub! P (host, sieć lub protokół nieosiągalny),! S (trasa źródłowa nieudana),! F- (wymagana fragmentacja - wyświetlana jest wartość MTU Discovery RFC1191), ! X (komunikacja administracyjnie zabroniona),! V (naruszenie pierwszeństwa hosta),! C (w praktyce odcięcie pierwszeństwa). Są one zdefiniowane przez RFC1812 (który zastępuje RFC1716). Jeśli prawie wszystkie sondy spowodują pewien rodzaj nieosiągalnego, traceroute zrezygnuje i wyjdzie. Ten program jest przeznaczony do użytku w testowaniu sieci, pomiarach i zarządzaniu. Powinien być używany przede wszystkim do ręcznej izolacji usterek. Z powodu obciążenia, jakie może nałożyć na sieć, nie należy używać traceroute podczas normalnych operacji lub z zautomatyzowanych skryptów.
+
+//////////////////////////////////////////////
+WIRESHARK
+
+
+Przy pierwszym uruchomieniu Wireshark powinien być widoczny ekran zawierający listę dostępnych połączeń sieciowych na bieżącym urządzeniu.
+
+Po nagraniu niektórych danych sieciowych nadszedł czas, aby przyjrzeć się przechwyconym pakietom. Interfejs przechwyconych danych zawiera trzy główne sekcje: Panel listy pakietów, panel szczegółów pakietu i okienko pakietów.
+
+1)Lista pakietów
+
+Panel listy pakietów, znajdujący się w górnej części okna, pokazuje wszystkie pakiety znalezione w aktywnym pliku przechwytywania. Każdy pakiet ma swój własny wiersz i odpowiadający mu numer, wraz z każdym z tych punktów danych.
+
+*Czas: Znacznik czasu, w którym pakiet został przechwycony, jest wyświetlany w tej kolumnie, a domyślny format to liczba sekund (lub częściowych sekund) od momentu utworzenia tego konkretnego pliku przechwytywania.)
+
+*Źródło: ta kolumna zawiera adres (IP lub inny), z którego pochodzi pakiet.
+
+*Miejsce docelowe: ta kolumna zawiera adres, do którego pakiet jest wysyłany.
+
+*Protokół: W tej kolumnie można znaleźć nazwę protokołu pakietu (np. TCP).
+
+*Długość: w tej kolumnie wyświetlana jest długość pakietu w bajtach.
+
+*Informacja: Dodatkowe szczegóły na temat pakietu znajdują się tutaj. Zawartość tej kolumny może się znacznie różnić w zależności od zawartości pakietu.
+
+Po wybraniu pakietu w górnym panelu możesz zauważyć, że jeden lub więcej symboli pojawia się w pierwszej kolumnie. Otwarte i / lub zamknięte nawiasy, a także prosta pozioma linia, mogą wskazywać, czy pakiet lub grupa pakietów są częścią tej samej konwersacji w sieci. Zerwana linia pozioma oznacza, że ​​pakiet nie jest częścią wspomnianej konwersacji.
+
+2)Szczegóły pakietów
+
+Okienko szczegółów znajdujące się w środku przedstawia protokoły i pola protokołu wybranego pakietu w formacie zwijanym. Oprócz poszerzania każdej selekcji można również zastosować indywidualne filtry Wireshark oparte na określonych szczegółach, a także śledzić strumienie danych w oparciu o typ protokołu za pomocą menu kontekstowego szczegółów - dostępnego po kliknięciu prawym przyciskiem myszy na żądanym elemencie w tym okienku.
+
+3)Bajty pakietów
+
+U dołu znajduje się okienko pakietów bajtów, które wyświetla nieprzetworzone dane wybranego pakietu w widoku szesnastkowym.
+
+Wybranie konkretnej części danych automatycznie podświetli odpowiednią sekcję w okienku szczegółów pakietu i na odwrót. Wszystkie bajty, których nie można wydrukować, są reprezentowane przez kropkę.
+
+Można wybrać wyświetlanie tych danych w formacie bitowym w przeciwieństwie do szesnastkowych, klikając prawym przyciskiem myszy w dowolnym miejscu w panelu i wybierając odpowiednią opcję z menu kontekstowego.
+
+-----------------------------------
+Jednym z najważniejszych funkcji w Wireshark są jego możliwości filtrowania, szczególnie gdy mamy do czynienia z plikami o znacznej wielkości. Filtry przechwytywania można wybierać tak, aby zapisywał tylko te pakiety, które spełniają określone kryteria.
+
+Filtry można również zastosować do pliku przechwytywania, który został już utworzony, dzięki czemu wyświetlane są tylko niektóre pakiety. Są one określane jako filtry wyświetlania.
+
+Wireshark udostępnia domyślnie dużą liczbę predefiniowanych filtrów, pozwalając zawęzić liczbę widocznych pakietów za pomocą kilku naciśnięć klawiszy lub kliknięć myszą. 
+
+Jeśli znasz już nazwę filtra, po prostu wpisz go w odpowiednie pole. Na przykład, jeśli chcesz wyświetlić tylko pakiety TCP, wpisz tcp. 
+Jeśli zdecydujesz się zarządzać dowolnym typem, pojawi się interfejs umożliwiający dodawanie, usuwanie lub edycję filtrów.
+Możesz także uzyskać dostęp do wcześniej używanych filtrów, wybierając strzałkę w dół, znajdującą się po prawej stronie pola wprowadzania, które wyświetla listę rozwijaną historii.
+
+Po ustawieniu filtry przechwytywania zostaną zastosowane natychmiast po rozpoczęciu rejestrowania ruchu sieciowego.
+----------------------------------
+Podczas przechwytywania i wyświetlania filtrów Wireshark pozwalają ograniczyć to, które pakiety są nagrywane lub wyświetlane na ekranie, jego funkcja barwienia posuwa się o krok dalej, ułatwiając rozróżnianie rodzajów pakietów w zależności od ich indywidualnego odcienia. 
+
+Filtry wyświetlania można zastosować do wielu z tych statystyk za pośrednictwem ich poszczególnych interfejsów, a wyniki można wyeksportować do kilku popularnych formatów plików, w tym CSV, XML i TXT.
+
+///////////////////////////////////////////////////////////
+Materiały
+
+https://www.lifewire.com/ping-command-2618099
+https://www.lifewire.com/uses-of-command-ping-2201076
+https://www.antipodesmap.com/				- wyznaczanie najdalszego servera
+https://www.proxy-liste.com/en/proxy/New+Zealand.html - servery New Zeland
+https://www.lifewire.com/wireshark-tutorial-4143298
+https://www.lifewire.com/traceroute-linux-command-4092586
+https://www.inmotionhosting.com/support/website/how-to/read-traceroute#contact
+http://gry-planszowe.pl/forum/viewtopic.php?f=1&t=3144  - niezabiezpieczone logowanie
+
+
+

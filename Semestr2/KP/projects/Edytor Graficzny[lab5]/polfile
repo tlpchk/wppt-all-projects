@@ -1,0 +1,8 @@
+/* AUTOMATICALLY GENERATED ON Fri May 05 15:01:51 CEST 2017*/
+/* DO NOT EDIT */
+
+grant {
+  permission java.util.PropertyPermission "user.home", "read";
+  permission java.io.FilePermission "${user.home}/text.txt", "read, write";
+};
+

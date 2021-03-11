@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"> 
+	<title>Strona Glowna Jana Kowalskiego</title>
+	<style>
+		.container{
+			background-color: rgb(241,246,255);
+			margin: auto; 
+			width: 720px;
+		}
+		.row:after{
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		.col{
+			float: left;
+			width: 350px;
+			margin-right: 5px;
+			margin-left: 5px;
+  	}
+		.adress{
+				padding: 0 5px;
+	    	margin-bottom:2.5em;
+				margin-top: 0px;
+  		}
+		.list{
+			height:200px;
+			padding-top: 50px;
+			background-color:orange;	
+		
+		}
+		li{
+			font-size: 1.5em;		
+		}
+		.myadress{
+			font-size: 1.5em;
+			color: white;
+			background-color: black;			
+		}
+		.whatido{
+			height: 250px;
+			margin-top: 0px;
+			font-size: 3em;
+			color: white;
+			background-color: black;		
+		}
+		h1{
+			padding:5px;	
+		}
+		 
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Jan Kowalski</h1>
+		<div class = "row">
+			<div class="col">	
+				<h3>Co robię?</h3>
+				<p class="whatido">Jestem studentem informatyki WPPT</p>
+			</div>
+			<div class="col">
+				<h3>Co lubię?</h3>
+					<ul class="list">
+						<li>pływać</li>
+						<li>czytać</li>
+						<li>programować</li>
+						<li>fotografować</li>
+					</ul>	
+			</div>
+		</div>
+		<div class="adress">
+			<h3>Adres:</h3>
+			<p class="myadress">
+				Droga Mleczna; układ słoneczny(taka mała gwiazdka klasy G2V w wewętrznej<br/> części Ramienia Oriona);trzecia planeta od słońca;kontynent Europa
+			</p>
+		</div>
+	</div>
+</body>
+</html>

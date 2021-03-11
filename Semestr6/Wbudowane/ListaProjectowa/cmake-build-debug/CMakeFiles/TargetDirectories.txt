@@ -1,0 +1,3 @@
+/home/telepchuk/Documents/6 semestr/Wbudowane/ListaProjectowa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/telepchuk/Documents/6 semestr/Wbudowane/ListaProjectowa/cmake-build-debug/CMakeFiles/ListaProjectowa.dir
+/home/telepchuk/Documents/6 semestr/Wbudowane/ListaProjectowa/cmake-build-debug/CMakeFiles/edit_cache.dir

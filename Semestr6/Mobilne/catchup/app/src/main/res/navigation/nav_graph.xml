@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/mapScreen">
+    <fragment android:id="@+id/mapScreen" android:name="com.appteam.catchup.MapFragment"
+              tools:layout="@layout/activity_maps" android:label="mapScreen">
+        <action android:id="@+id/action_mapsActivity_to_eventDetails" app:destination="@id/eventDetailsScreen"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_mapScreen_to_eventList" app:destination="@id/eventListScreen"/>
+        <action android:id="@+id/action_mapScreen_to_createEvent" app:destination="@id/createEventScreen"/>
+    </fragment>
+    <fragment android:id="@+id/eventDetailsScreen" android:name="com.appteam.catchup.ui.eventDetails.EventDetailsFragment"
+              android:label="eventDetailsScreen" tools:layout="@layout/fragment_event_details">
+        <action android:id="@+id/action_eventDetails_to_mapsActivity" app:destination="@+id/mapScreen">
+            <argument android:name="event" app:argType="com.appteam.catchup.model.Event"/>
+        </action>
+    </fragment>
+    <fragment android:id="@+id/eventListScreen" android:name="com.appteam.catchup.ui.eventList.EventListFragment"
+              android:label="eventListScreen" tools:layout="@layout/fragment_event_list">
+        <action android:id="@+id/action_eventList_to_mapScreen" app:destination="@id/mapScreen"/>
+    </fragment>
+    <fragment android:id="@+id/createEventScreen" android:name="com.appteam.catchup.ui.createEvent.CreateEventFragment"
+              android:label="createEventScreen" tools:layout="@layout/fragment_create_event">
+        <action android:id="@+id/action_createEvent_to_mapScreen" app:destination="@id/mapScreen"/>
+    </fragment>
+
+</navigation>
